@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla ToDo List.</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>What should be done?</h1>
+    <div class="container">
+        <input type="text" name="taskInput" placeholder=" + Add Task">
+        <select name='prior'>
+        <option value="urgent ">urgent</option>
+        <option value="regular ">regular</option>
+        <option value="long term ">long term</option>
+        </select>
+
+        <button id="plus" data-create><i class="fa fa-plus fa-2x "></i></button>
+        <button data-deleteCompleted>Delete completed</button>
+        <button data-deleteAll>Delete All</button>
+
+        <div class="tasksContainer">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

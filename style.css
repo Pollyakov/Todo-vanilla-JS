@@ -1,0 +1,138 @@
+:root {
+    --headers_color: rgb(16, 125, 133);
+    --hover-color: rgb(241, 212, 148);
+    --background-blue: rgb(196, 224, 236);
+    --background-gray: rgb(230, 233, 239);
+    --headers-font: "Mate SC", serif;
+    --tasks-color: rgb(82, 6, 145);
+    --table-color: rgb(56, 145, 159);
+    --mel-color: rgb(247, 247, 247);
+    --tasks-font: "Schoolbell", cursive;
+    --main-font: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--main-font);
+}
+
+h1 {
+    color: var(--tasks-color);
+    font-size: 3rem;
+    font-family: var(--headers-font);
+}
+
+button {
+    background-color: var(--background-gray);
+    color: var(--tasks-color);
+    height: 6vh;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+input,
+button:hover {
+    /* background: rgb(241, 212, 148); */
+    background: rgb(241, 223, 184);
+}
+
+input[name="taskInput"] {
+    font-family: var(--tasks-font);
+    width: 100%;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    font-size: 2rem;
+    color: var(--tasks-color);
+    padding: 1vh;
+    border-radius: 8px;
+}
+
+div.tasksContainer input.update {
+    width: fit-content;
+    height: 6vh;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-family: var(--tasks-font);
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    padding: 1vh;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.done {
+    background-color: green;
+    border: red 3px solid;
+}
+
+select[name="prior"] {
+    border: 2px solid;
+    width: 22%;
+    height: 8vh;
+    padding: 1vh;
+    background-color: var(--background-gray);
+    font-family: var(--tasks-font);
+    font-size: 2rem;
+    color: var(--tasks-color);
+}
+
+#plus {
+    width: 15%;
+    display: block;
+    border-radius: 100px;
+}
+
+#plus:hover {
+    background-color: var(--hover-color);
+}
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+div .tasksContainer {
+    color: var(--mel-color);
+    font-family: var(--tasks-font);
+    font-size: 2rem;
+    padding: 1.2rem;
+    background: url("fon.jpg") no-repeat center center/cover;
+    border: solid 2px var(--tasks-color);
+    height: 60vh;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.task>button {
+    align-self: end;
+}
+
+div .task {
+    height: 10vh;
+    width: 100%;
+    border: var(--background-gray) 1px solid;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.task>span {
+    margin-left: 10px;
+}
